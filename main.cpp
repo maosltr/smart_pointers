@@ -61,7 +61,6 @@ int main()
         {
             wePtr1 = shPtr1;
             std::shared_ptr<MyClass> sharedPtr = wePtr1.lock();
-
             sharedPtr->pretty_print();
             cout << "Share count: " << shPtr1.use_count() << endl;
         }
